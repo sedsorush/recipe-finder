@@ -1,0 +1,52 @@
+.imageBox {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.5s forwards;
+  }
+  
+  .cats {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.75s forwards;
+  }
+  
+  .timeAndServs {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.65s forwards;
+  }
+
+  .ings {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.85s forwards;
+  }
+
+  .instcs {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.95s forwards;
+  }
+
+  .errorText {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.75s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

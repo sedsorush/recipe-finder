@@ -1,0 +1,54 @@
+.pOne {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.5s forwards;
+  }
+.pTwo {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.55s forwards;
+  }
+.pThree {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.6s forwards;
+  }
+.pFour {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.65s forwards;
+  }
+.pFive {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.7s forwards;
+  }
+.pSix {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.75s forwards;
+  }
+.pSeven {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.8s forwards;
+  }
+
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,41 @@
+.iconBox {
+    transition: all 250ms;
+    color:#cb7000;
+    font-weight: 600;
+}
+
+.icon {
+    transition: scale 200ms ease-in;
+}
+
+.iconBox:hover .icon {
+  scale: 1.2;
+  cursor: pointer;
+}
+.iconBox:active .icon {
+  scale: 0.9;
+}
+
+.iconBox:hover {
+    color: #f4ede7;
+    background-color: #cb7000;
+}
+
+.active {
+    color: #f4ede7;
+    background-color: #cb7000;
+}
+
+.themeIcon {
+    color: #cb7000;
+    transition: all 250ms;
+    margin-right: 15px;
+}
+
+.themeIcon:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+.themeIcon:active {
+    scale: 0.9;
+}

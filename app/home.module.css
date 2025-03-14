@@ -1,0 +1,32 @@
+.homeBanner {
+  text-shadow: 0 0 1px #583500;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out 0.75s forwards;
+}
+
+.backGround {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out 0.5s forwards;
+}
+
+.searchBar {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out 0.95s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

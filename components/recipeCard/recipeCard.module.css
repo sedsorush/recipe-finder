@@ -1,0 +1,12 @@
+.container {
+    transition: all 100ms ease-in;
+}
+
+.container:hover {
+    scale: 1.05;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+}
+.container:active {
+    scale: 0.95;
+}

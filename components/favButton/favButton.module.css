@@ -1,0 +1,17 @@
+.favoriteButton {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0.8;
+    transition: all 200ms ease-in-out;
+}
+.favorited {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.favoriteButton:hover {
+    scale: 1.05;
+    opacity: 1;
+}

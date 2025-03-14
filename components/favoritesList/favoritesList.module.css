@@ -1,0 +1,26 @@
+.removeIcon {
+  transition: all 200ms ease-out;
+  color: rgba(0, 0, 0, 0.612);
+}
+.removeIcon:hover {
+  cursor: pointer;
+  scale: 1.25;
+  color: black;
+  font-weight: 900;
+}
+.removeIcon:active {
+  scale: 0.9;
+}
+.navIcon {
+  transition: all 200ms ease-out;
+  color: rgba(0, 0, 0, 0.612);
+}
+.navIcon:hover {
+  cursor: pointer;
+  scale: 1.25;
+  color: black;
+  font-weight: 900;
+}
+.navIcon:active {
+  scale: 0.9;
+}
