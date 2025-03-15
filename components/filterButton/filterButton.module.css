@@ -1,17 +1,12 @@
 .filterButton:hover {
-    background-color: #cdc6c0;
+    background-color: #cd8a50;
     cursor: pointer;
   }
   
   
   .active {
-      background-color: #cdc6c0;
+      background-color: #cd8a50;
       display: flex;
       justify-content: space-between;
-  }
-  
-  .active .deFilter:hover {
-      color: #f3f3f3;
-      cursor: pointer;
   }
   

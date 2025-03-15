@@ -1,4 +1,3 @@
-import { IoHeartOutline, IoHeartSharp } from "react-icons/io5";
 import styles from "./recipeDetail.module.css";
 import FilterButton from "@/components/filterButton";
 import FavoriteButton from "@/components/favButton";
@@ -144,7 +143,7 @@ const RecipeDetail = async ({ params }) => {
             </div>
           ) : (
             <div className="flex items-center justify-center ">
-              <h1 className={`${styles.errorText} text-[#1c140d] text-4xl font-bold leading-tight tracking-[-0.015em] w-[50%] px-4 text-left pb-3 pt-5`}>
+              <h1 className={`${styles.errorText} text-[#1c140d] text-5xl font-bold leading-11.5 tracking-[-0.015em] w-[50%] text-left `}>
               {listUnavailable}
               </h1>
             </div>

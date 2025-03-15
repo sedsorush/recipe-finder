@@ -1,22 +1,29 @@
 "use client";
 import RecipeCard from "@/components/recipeCard";
 import FilterButton from "@/components/filterButton";
-import { diet } from "@/constants/filterCats";
+import { cuisine, diet, type } from "@/constants/filterCats";
 import LoadMoreButton from "@/components/loadMore";
 import styles from "./results.module.css";
 import { useEffect, useState } from "react";
 import { getRecipes } from "@/api/getRecipes";
 
 const SearchResults = ({ params }) => {
-  const [recipes, setRecipes] = useState();
+  const [recipes, setRecipes] = useState([]);
   const [offsetValue, setOffsetValue] = useState(0);
+  const [hasMoreData, setHasMoreData] = useState(true);
   // const ings = "&includeIngredients=tomato";
   const paramArr = params.searchResults;
   const query = paramArr[0];
 
   const getSearchParam = () => {
     if (paramArr.length > 1) {
-      const filterPar = `&diet=${paramArr[paramArr.length - 1]}`;
+      let filterPar = "";
+      if(type.includes(paramArr[paramArr.length - 1])){
+        filterPar = `&type=${paramArr[paramArr.length - 1]}`
+      }
+      if(diet.includes(paramArr[paramArr.length - 1])){
+        filterPar = `&diet=${paramArr[paramArr.length - 1]}`
+      }
 
       return `${query}${filterPar}`;
     }
@@ -25,7 +32,7 @@ const SearchResults = ({ params }) => {
 
   const finalQuery = getSearchParam();
 
-  // console.log("Q", finalQuery, "parArr", paramArr, "Off", offsetValue);
+  console.log("Q", finalQuery, "parArr", paramArr, "Off", offsetValue);
 
   let listUnavailable = `an error occurred and the data for your search is not
                     available at the moment...note that this might be due
@@ -38,6 +45,10 @@ const SearchResults = ({ params }) => {
       setRecipes(result);
     } else {
       setRecipes((prev) => [...prev, ...result]);
+    }
+
+    if (result.length < 20) {
+      setHasMoreData(false);
     }
   };
 
@@ -55,6 +66,16 @@ const SearchResults = ({ params }) => {
             {Array.isArray(recipes) ? (
               <div className="flex gap-3 p-3 flex-wrap">
                 {diet.map((item) => {
+                  return (
+                    <FilterButton
+                      title={item}
+                      key={item}
+                      currParam={query}
+                      fullParam={paramArr}
+                    />
+                  );
+                })}
+                {type.map((item) => {
                   return (
                     <FilterButton
                       title={item}
@@ -93,7 +114,7 @@ const SearchResults = ({ params }) => {
                 </h1>
               )}
             </div>
-            {Array.isArray(recipes) ? (
+            {Array.isArray(recipes) && hasMoreData === true ? (
               <div className={styles.loadMoreButton}>
                 <LoadMoreButton
                   onClick={() => {
