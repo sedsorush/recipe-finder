@@ -5,14 +5,15 @@
     margin-bottom: 25px;
 }
 
-.logo {
-    animation: spin 1s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+.loader {
+    animation: spin 2s infinite linear;
 }
 
 @keyframes spin {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
