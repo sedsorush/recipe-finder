@@ -20,7 +20,7 @@ export default function Home() {
                   />
                   <h1
                     className={`${styles.homeBanner} text-[#fffff0] z-10 text-7xl font-black leading-tight tracking-[-0.033em] @[480px]:text-7xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] text-center`}>
-                    Find Recipes You'll Love
+                    Find Recipes You&apos;ll Love
                   </h1>
                   <div className={styles.searchBar}>
                     <SearchRecipes />

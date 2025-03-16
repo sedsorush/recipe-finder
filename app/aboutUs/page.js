@@ -23,9 +23,9 @@ const AboutUs = () => {
                   </p>
                   <p
                     className={`${styles.pThree} text-[#897361] text-md font-normal text-pretty w-full text-justify`}>
-                    At <strong>Recipe Finder</strong>, we're passionate about
+                    At <strong>Recipe Finder</strong>, we&apos;re passionate about
                     making culinary exploration effortless and exciting for
-                    everyone. Whether you're a seasoned chef or a kitchen
+                    everyone. Whether you&apos;re a seasoned chef or a kitchen
                     newbie, our mission is to empower you to discover
                     mouthwatering recipes that match your taste, mood, and
                     ingredients on hand. Our website lets you:
@@ -34,14 +34,14 @@ const AboutUs = () => {
                     className={`${styles.pFour} text-[#897361] text-md font-normal text-pretty w-full text-justify`}>
                     <span className="italic">Search by Food Name:</span> Craving
                     something specific? Just type in the name of the dish, and
-                    we'll serve up a collection of delectable recipes for you to
+                    we&apos;ll serve up a collection of delectable recipes for you to
                     try.
                   </p>
                   <p
                     className={`${styles.pFive} text-[#897361] text-md font-normal text-pretty w-full text-justify`}>
                     <span className="italic">Ingredient-Based Search:</span> Got
                     a handful of ingredients but not sure what to cook? Enter
-                    what you have, and we'll whip up an array of recipes that
+                    what you have, and we&apos;ll whip up an array of recipes that
                     make the best use of your pantry.
                   </p>
                   <p

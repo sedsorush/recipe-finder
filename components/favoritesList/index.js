@@ -66,7 +66,7 @@ const FavoritesList = () => {
             No favorite recipes yet
           </p>
           <p className="text-[#181411] text-sm font-normal leading-normal max-w-[480px] text-center">
-            You haven't favorited any recipes just yet. Once you find a recipe
+            You haven&apos;t favorited any recipes just yet. Once you find a recipe
             you love, favorite it to add it to this list.
           </p>
         </div>
