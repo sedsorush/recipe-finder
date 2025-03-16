@@ -37,7 +37,7 @@ const RecipeDetail = async ({ params }) => {
     sustainable: false,
   };
   return (
-    <div className="relative flex size-full min-h-[673.1999px] flex-col bg-[#f5f5dc] group/design-root overflow-x-hidden">
+    <div className="relative flex size-full min-h-[92.26vh] flex-col bg-[#f5f5dc] group/design-root overflow-x-hidden">
       <div className="layout-container flex h-full grow flex-col">
         <div className="@[930px]:px-40 px-10 flex flex-1 justify-center py-5">
           {recipeDetails?.title ? (

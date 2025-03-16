@@ -18,11 +18,11 @@ const SearchResults = ({ params }) => {
   const getSearchParam = () => {
     if (paramArr.length > 1) {
       let filterPar = "";
-      if(type.includes(paramArr[paramArr.length - 1])){
-        filterPar = `&type=${paramArr[paramArr.length - 1]}`
+      if (type.includes(paramArr[paramArr.length - 1])) {
+        filterPar = `&type=${paramArr[paramArr.length - 1]}`;
       }
-      if(diet.includes(paramArr[paramArr.length - 1])){
-        filterPar = `&diet=${paramArr[paramArr.length - 1]}`
+      if (diet.includes(paramArr[paramArr.length - 1])) {
+        filterPar = `&diet=${paramArr[paramArr.length - 1]}`;
       }
 
       return `${query}${filterPar}`;
@@ -59,11 +59,11 @@ const SearchResults = ({ params }) => {
   // console.log(recipes);
 
   return (
-    <div className="relative flex size-full min-h-[673.1999px] flex-col bg-[#f5f5dc] group/design-root overflow-x-hidden">
+    <div className="relative flex size-full min-h-[92.26vh] flex-col bg-[#f5f5dc] group/design-root overflow-x-hidden">
       <div className="layout-container flex h-full justify-center grow flex-col">
         <div className="@[900px]:px-40 px-5 flex flex-1 justify-center py-5">
           <div className="layout-content-container flex flex-col max-w-[1200px] flex-1">
-            {Array.isArray(recipes) ? (
+            {Array.isArray(recipes) && recipes?.length !== 0 ? (
               <div className="flex gap-3 p-3 flex-wrap">
                 {diet.map((item) => {
                   return (
@@ -89,11 +89,11 @@ const SearchResults = ({ params }) => {
             ) : null}
             <div
               className={
-                Array.isArray(recipes)
+                Array.isArray(recipes) && recipes?.length !== 0 
                   ? "grid grid-cols-[repeat(auto-fit,minmax(175px,200px))] justify-center gap-3 p-4 mb-[75px]"
                   : "flex h-full items-center justify-center"
               }>
-              {Array.isArray(recipes) ? (
+              {Array.isArray(recipes) && recipes?.length !== 0 ? (
                 recipes?.map((recipe) => {
                   return (
                     <RecipeCard

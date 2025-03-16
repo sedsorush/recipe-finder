@@ -3,7 +3,7 @@ import styles from "./favorites.module.css"
 
 const Favorites = () => {
   return (
-    <div className="relative flex size-full min-h-[673.1999px] flex-col bg-[#f5f5dc] group/design-root overflow-x-hidden">
+    <div className="relative flex size-full min-h-[92.26vh] flex-col bg-[#f5f5dc] group/design-root overflow-x-hidden">
       <div className="layout-container flex h-full grow flex-col">
         <div className="@[900px]:px-40 px-5 flex flex-1 justify-center py-5">
           <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
