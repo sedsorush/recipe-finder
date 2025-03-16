@@ -31,6 +31,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2 text-[#cb7000]">
           <div className="size-4">
             <svg
+              className={styles.logo}
               viewBox="0 0 48 48"
               width="20px"
               height="20px"

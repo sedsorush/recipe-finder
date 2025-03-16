@@ -39,3 +39,17 @@
 .themeIcon:active {
     scale: 0.9;
 }
+
+.logo {
+    animation: spin 5s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
