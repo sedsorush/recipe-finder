@@ -6,15 +6,20 @@ import { IoHeartOutline } from "react-icons/io5";
 const FavoriteButton = ({ recipe }) => {
   const getFavoritesList = () => {
     if (typeof window !== "undefined") {
-      const storage = localStorage.getItem("favorites");
-      if (storage) {
+      const storage = localStorage.getItem("favorites"||null);
+      if (storage!=="undefined") {
         const favs = JSON.parse(storage);
         return favs
       }
     }
+    else return []
   };
-  const [favorites, setFavorites] = useState(getFavoritesList());
+
+  const [favorites, setFavorites] = useState(getFavoritesList()||[]);
   const [isFavorited, setIsFavorited] = useState();
+
+  console.log("favorites",favorites);
+  
 
   useEffect(() => {
     const alreadyFavorited = favorites?.some((item) => item.id === recipe.id);

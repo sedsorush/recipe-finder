@@ -2,7 +2,6 @@ import FavoritesList from "@/components/favoritesList";
 import styles from "./favorites.module.css"
 
 const Favorites = () => {
-  let n = 20;
   return (
     <div className="relative flex size-full min-h-[673.1999px] flex-col bg-[#f5f5dc] group/design-root overflow-x-hidden">
       <div className="layout-container flex h-full grow flex-col">
