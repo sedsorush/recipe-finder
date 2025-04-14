@@ -117,7 +117,7 @@ const SearchResults = ({ params }) => {
               <div
                 className={
                   Array.isArray(recipes) && recipes?.length !== 0
-                    ? "grid grid-cols-[repeat(auto-fit,minmax(175px,200px))] justify-center gap-3 p-4 mb-[75px]"
+                    ? `${styles.resultsGrid} grid grid-cols-[repeat(auto-fit,minmax(175px,200px))] justify-center gap-3 p-4 mb-[75px]`
                     : "flex h-full items-center justify-center"
                 }>
                 {Array.isArray(recipes) && recipes?.length !== 0 ? (

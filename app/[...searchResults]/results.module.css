@@ -5,6 +5,24 @@
     margin-bottom: 25px;
 }
 
+.errorText {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out 0.75s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 .loader {
     animation: spin 2s infinite linear;
 }
@@ -17,4 +35,25 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+@media screen and (max-width:484px) {
+  .resultsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width:1500px) {
+  .loadMoreButton {
+    left: 43%;
+  }
+}
+@media screen and (max-width:900px) {
+  .loadMoreButton {
+    left: 40%;
+  }
+}
+@media screen and (max-width:500px) {
+  .loadMoreButton {
+    left: 36%;
+  }
 }
