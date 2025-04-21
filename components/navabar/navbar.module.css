@@ -53,3 +53,16 @@
         transform: rotate(360deg);
     }
 }
+
+@media screen and (max-width:425px) {
+    .recipeFinder {
+        font-size: 20px;
+    }
+    .iconBox, .active {
+        height: 25px;
+        width: 25px;
+    }
+    .icon {
+        font-size: 15px;
+    }
+}

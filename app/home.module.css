@@ -64,5 +64,9 @@
   }
   .homeBanner {
     font-size: 40px;
+    color: #583500;
+  }
+  .backGround {
+    display: none;
   }
 }

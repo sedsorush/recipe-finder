@@ -37,15 +37,15 @@ const RecipeDetail = async ({ params }) => {
     sustainable: false,
   };
   return (
-    <div className="relative flex size-full min-h-[92.26vh] flex-col bg-[#f5f5dc] group/design-root overflow-x-hidden">
+    <div className={`relative flex size-full flex-col bg-[#f5f5dc] group/design-root overflow-x-hidden`}>
       <div className="layout-container flex h-full grow flex-col">
         <div className="@[930px]:px-40 px-10 flex flex-1 justify-center py-5">
           {recipeDetails?.title ? (
             <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
               <div className="@container">
-                <div className="@[480px]:px-4 @[480px]:py-3">
+                <div className="px-4 py-3">
                   <div
-                    className={`${styles.imageBox} w-full bg-center relative bg-no-repeat bg-cover flex flex-col justify-end items-start overflow-hidden bg-[#f5f5dc] @[480px]:rounded-xl min-h-80`}
+                    className={`${styles.imageBox} w-full bg-center relative bg-no-repeat bg-cover flex flex-col justify-end items-start overflow-hidden bg-[#f5f5dc] rounded-xl min-h-80`}
                     style={{
                       backgroundImage: `url(${recipeDetails.image})`,
                     }}>

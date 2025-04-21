@@ -42,7 +42,7 @@ const Navbar = () => {
                 fill="currentColor"></path>
             </svg>
           </div>
-          <h2 className="text-[#cb7000] text-3xl font-bold leading-tight tracking-[-0.015em]">
+          <h2 className={`${styles.recipeFinder} text-[#cb7000] text-3xl font-bold leading-tight tracking-[-0.015em]`}>
             Recipe Finder
           </h2>
         </div>

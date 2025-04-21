@@ -4,13 +4,13 @@ import SearchRecipes from "@/components/searchRecipes";
 
 export default function Home() {
   return (
-    <div className="relative flex size-full min-h-[92.26vh] flex-col bg-[#f5f5dc] group/design-root overflow-x-hidden">
+    <div className="relative flex size-full flex-col bg-[#f5f5dc] group/design-root overflow-x-hidden">
       <div className="layout-container flex h-full grow flex-col">
         <div className="@[900px]:px-40 px-5 flex flex-1 justify-center py-8 ">
           <div className="layout-content-container flex flex-col max-w-[1200px] flex-1">
             <div className="@container">
-              <div className="p-4">
-                <div className="flex  relative min-h-[550px] flex-col overflow-hidden gap-8 rounded-xl items-center justify-center p-4">
+              <div className="p-4 @[385px] :p-0">
+                <div className="flex relative min-h-[550px] flex-col overflow-hidden gap-8 rounded-xl items-center justify-center p-4">
                   <Image
                     className={`${styles.backGround} z-0 object-cover opacity-90`}
                     src={"/GettyImages-1407832840.webp"}

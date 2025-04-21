@@ -50,3 +50,14 @@
       transform: translateY(0);
     }
   }
+
+  @media screen and (max-width:444px) {
+    .cats,.imageBox,.ings,.instcs,.timeAndServs {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .instcs {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
