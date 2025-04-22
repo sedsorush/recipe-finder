@@ -2,7 +2,8 @@
 
 A modern recipe search application built with **Next JS** and **Tailwind CSS**, powered by the [Spoonacular API](https://spoonacular.com/). Find delicious recipes based on ingredients, dietary preferences, and more!  
 
-![Live Link](https://recipe-finder-nine-eta.vercel.app)  
+## Live Link at
+[https://recipe-finder-nine-eta.vercel.app/](https://recipe-finder-nine-eta.vercel.app/)
 
 ## Features  
 
